@@ -1,0 +1,56 @@
+{
+    "mapping-collection": {
+        "uuid": "3e614551-4cbd-4be7-aa7c-406b506dc6fe",
+        "metadata": {
+            "title": "Basic Mapping (basicCatalogA to basicCatalogB",
+            "last-modified": "2025-12-14T20:24:00.283Z",
+            "version": "1.0.0",
+            "oscal-version": "1.1.3",
+            "remarks": "A basic mapping between basicCatalogA and basicCatalogB to demonstrate basic mapping functionality."
+        },
+        "provenance": {
+            "method": "human",
+            "matching-rationale": "functional",
+            "status": "complete",
+            "mapping-description": "Note that when going from A to B, coverage is 1.0. All of the requirements in CatalogB are covered by the requirements in CatalogA."
+        },
+        "mappings": [
+            {
+                "uuid": "f9296115-e9fb-478e-84ca-31f6be3bb839",
+                "relationship": "equivalent-to",
+                "coverage": 1.0,
+                "source-resource": {
+                    "type": "catalog",
+                    "href": "./basicCatalogA.json"
+                },
+                "target-resource": {
+                    "type": "catalog",
+                    "href": "./basicCatalogB.json"
+                },
+                "maps": [
+                    {
+                        "uuid": "5471f2c6-cbf5-432d-a7c1-9bad5eeebf7f",
+                        "sources": [
+                            {
+                                "type": "control",
+                                "id-ref": "A-2"
+                            }
+                        ],
+                        "targets": [
+                            {
+                                "type": "control",
+                                "id-ref": "B-1"
+                            },
+                            {
+                                "type": "control",
+                                "id-ref": "B-2"
+                            }
+                        ],
+                        "coverage": 1.0
+                    }
+                ]
+
+            }
+        ]
+    }
+}

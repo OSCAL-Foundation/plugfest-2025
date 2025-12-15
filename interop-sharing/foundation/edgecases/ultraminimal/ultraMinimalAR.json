@@ -1,0 +1,29 @@
+{
+    "assessment-results": {
+        "uuid": "12e88fa4-46d2-4189-b477-1e68e8a3f548",
+        "metadata": {
+            "title": "Ultraminimal Assessment Results",
+            "last-modified": "2025-12-14T20:24:00.283Z",
+            "version": "1.0.0",
+            "oscal-version": "1.1.3"
+        },
+        "import-ap" :{
+                "href": "./ultraMinimalAP.json"
+        },
+        "results": [
+            {
+                "uuid": "4a55fb2d-f73a-4300-a79c-a6f337e2cf6e",
+                "title": "Ultraminimal Assessment Results",
+                "description": "Ultraminimal assessment results description.",
+                "start": "2025-12-01T00:00:00Z",
+                "reviewed-controls": {
+                    "control-selections": [
+                        {
+                            "include-all": {}
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

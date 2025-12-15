@@ -1,0 +1,11 @@
+{
+    "catalog": {
+        "uuid": "162e97fc-49e2-40e6-a1d9-c63422f845d0",
+        "metadata": {
+            "title": "Ultraminimal Catalog",
+            "last-modified": "2025-12-14T20:24:00.283Z",
+            "version": "1.0.0",
+            "oscal-version": "1.1.3"
+        }
+    }
+}

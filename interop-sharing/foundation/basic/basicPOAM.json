@@ -1,0 +1,47 @@
+{
+    "plan-of-action-and-milestones": {
+        "uuid": "89c0bd7f-89e8-417c-9302-b0611e653fee",
+        "metadata": {
+            "title": "Basic Plan of Action and Milestones",
+            "last-modified": "2025-12-14T20:30:00.123Z",
+            "version": "1.0.0",
+            "oscal-version": "1.1.3"
+        },
+        "import-ssp": {
+            "href": "./basicSSP.json"
+        },
+        "poam-items": [
+            {
+                "title": "Deficiency in ExampleCo Password Policy Implementation",
+                "description": "There is a deficiency in the implementation of the ExampleCo Password Policy that needs to be addressed.",
+                "related-observations": [
+                    {
+                        "observation-uuid": "035c2f62-4dd6-46e4-81ac-33c02076eb76"
+                    }
+                ],
+                "related-risks": [
+                    {
+                        "risk-uuid": "aa68c932-9660-480d-9ff1-6ecc6d7cefdb"
+                    }
+                ]
+            }
+        ],
+        "observations": [
+            {
+                "uuid": "035c2f62-4dd6-46e4-81ac-33c02076eb76",
+                "description": "The ExampleCo Password Policy is not being enforced adequately across the enterprise.",
+                "methods": [ "INTERVIEW" ],
+                "collected": "2025-11-30T10:00:00Z"
+            }
+        ],
+        "risks": [
+            {
+                "uuid": "aa68c932-9660-480d-9ff1-6ecc6d7cefdb",
+                "title": "Increased Risk of Unauthorized Access",
+                "description": "The deficiency in the password policy implementation increases the risk of unauthorized access to ExampleCo systems.",
+                "statement": "If the password policy is not properly implemented, then there is a higher likelihood of unauthorized access due to weak passwords being trivially broken by brute force.",
+                "status": "open"
+            }
+        ]
+    }
+}

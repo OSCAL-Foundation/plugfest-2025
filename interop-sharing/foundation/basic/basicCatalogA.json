@@ -1,0 +1,53 @@
+{
+    "catalog": {
+        "uuid": "0bcea86b-f6da-4e01-9b3e-e1df5392272f",
+        "metadata": {
+            "title": "Basic Catalog A",
+            "last-modified": "2025-12-14T20:24:00.283Z",
+            "version": "1.0.0",
+            "oscal-version": "1.1.3",
+            "remarks": "A basic catalog created to capture basic catalog elements and functionality for interoperability testing."
+        },
+        "controls": [
+            {
+                "id": "A-1",
+                "title": "Inactivity Auto-Lock",
+                "params": [
+                    {
+                        "id": "A-1.param1",
+                        "values": [ "15", "30", "60" ]
+
+                    }
+                ],
+                "parts": [
+                    {
+                        "id": "A-1.statement",
+                        "name": "statement",
+                        "prose": "All endpoints automatically lock after {{ insert: param, A-1.param1 }} minutes of inactivity."
+                    }
+                ]
+            },
+            {
+                "id": "A-2",
+                "title": "Password Complexity",
+                "params": [
+                    {
+                        "id": "A-2.param1",
+                        "label": "An integer value representing the minimum number of total characters required in a password."
+                    },
+                    {
+                        "id": "A-2.param2",
+                        "label": "An integer value representing the minimum number of numerals required in a password."
+                    }
+                ],
+                "parts": [
+                    {
+                        "id": "A-2.statement",
+                        "name": "statement",
+                        "prose": "All passwords must be at least {{ insert: param, A-2.param1 }} character(s) long and include at least {{ insert: param, A-2.param2 }} numeral(s)."
+                    }
+                ]
+            }
+        ]
+    }
+}

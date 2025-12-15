@@ -1,0 +1,48 @@
+{
+    "catalog": {
+        "uuid": "8160da8e-c85a-4eef-85aa-2291e78d425d",
+        "metadata": {
+            "title": "Basic Catalog B",
+            "last-modified": "2025-12-14T20:24:00.283Z",
+            "version": "1.0.0",
+            "oscal-version": "1.1.3",
+            "remarks": "A basic catalog created to capture basic catalog elements and functionality for interoperability testing."
+        },
+        "controls": [
+            {
+                "id": "B-1",
+                "title": "Password Minimum Length",
+                "params": [
+                    {
+                        "id": "B-1.param1",
+                        "label": "An integer value representing the minimum number of total characters required in a password."
+                    }
+                ],
+                "parts": [
+                    {
+                        "id": "B-1.statement",
+                        "name": "statement",
+                        "prose": "All passwords must be at least {{ insert: param, B-1.param1 }} character(s) long."
+                    }
+                ]
+            },
+            {
+                "id": "B-2",
+                "title": "Password Minimum Numerals",
+                "params": [
+                    {
+                        "id": "B-2.param1",
+                        "label": "An integer value representing the minimum number of numerals required in a password."
+                    }
+                ],
+                "parts": [
+                    {
+                        "id": "B-2.statement",
+                        "name": "statement",
+                        "prose": "All passwords must include at least {{ insert: param, B-1.param1 }} numeral(s)."
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,90 @@
+{
+    "system-security-plan":{
+        "uuid": "ab64f8f4-64a7-4a49-a03e-2cd454f91ce8",
+        "metadata": {
+            "title": "Basic SSP",
+            "last-modified": "2025-12-14T20:24:00.283Z",
+            "version": "1.0.0",
+            "oscal-version": "1.1.3",
+            "remarks": "A basic SSP created to capture basic functionality for interoperability testing."
+        },
+        "import-profile": {
+            "href": "./basicProfile.json"
+        },
+        "system-characteristics": {
+            "system-ids": [
+                {
+                    "id": "urn:uuid:f81d4fae-7dec-11d0-a765-00a0c91e6bf6"
+                }
+            ],
+            "system-name": "ExampleCo Enterprise Network",
+            "description": "An SSP that captures the state of the ExampleCo Enterprise Network.",
+            "system-information": {
+                "information-types": [
+                    {
+                        "title": "C.3.5.7 Information Management Information Type",
+                        "description": "Information Management involves the coordination of information collection, storage, and dissemination, and destruction as well as managing the policies, guidelines, and standards regarding information management."
+                    }
+                ]
+            },
+            "status": {
+                "state": "operational"
+            },
+            "authorization-boundary": {
+                "description": "The ExampleCo Enterprise Network authorization boundary encompasses all hardware, software, and firmware components that store, process, or transmit ExampleCo information."
+            }
+        },
+        "system-implementation": {
+            "components": [
+                {
+                    "uuid": "f2808f3c-9c81-4177-90d3-5508ae783ff8",
+                    "type": "policy",
+                    "title": "ExampleCo Password Policy",
+                    "description": "Corporate policy that establishes password requirements for all ExampleCo systems.",
+                    "status": {
+                        "state": "operational"
+                    }
+                }
+            ]
+        },
+        "control-implementation": {
+            "description": "Detailed description of how ExampleCo implements the controls defined in the Basic Catalog A (Basic Profile).",
+            "implemented-requirements": [
+                {
+                    "uuid": "ab087f98-c403-4c23-8ca7-0749cdba59b6",
+                    "control-id": "A-1",
+                    "by-components": [
+                        {
+                            "uuid": "d8a724f4-69b5-44d2-812a-07a77d89f152",
+                            "component-uuid": "267d0d90-402d-4990-8834-628500149ee5",
+                            "description": "ExampleCo has purchased and installed Auto-Lockout Pro on all endpoints within the authorization boundary to enforce automatic session lock after a defined period of inactivity.",
+                            "links": [
+                                {
+                                    "href": "./basicComponents.json",
+                                    "rel": "imported-from"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "uuid": "0e35b85a-3695-45b6-9219-2b6f284ffb67",
+                    "control-id": "A-2",
+                    "by-components": [
+                        {
+                            "uuid": "7c0718a1-73a7-45b2-a88b-17b21abbebcd",
+                            "component-uuid": "f2808f3c-9c81-4177-90d3-5508ae783ff8",
+                            "description": "ExampleCo enforces the password complexity requirements outlined in the ExampleCo Password Policy across all systems within the authorization boundary.",
+                            "links": [
+                                {
+                                    "href": "#f2808f3c-9c81-4177-90d3-5508ae783ff8",
+                                    "rel": "imported-from"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

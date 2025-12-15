@@ -1,0 +1,62 @@
+{
+    "component-definition":
+    {
+        "uuid": "d8cf6dde-31b8-48c6-a73c-e277dd4ef0ff",
+        "metadata": {
+            "title": "Basic Component Definition",
+            "last-modified": "2025-12-14T20:24:00.283Z",
+            "version": "1.0.0",
+            "oscal-version": "1.1.3",
+            "remarks": "A basic component definition to capture basic component elements and functionality for interoperability testing.",
+            "parties": [
+                {
+                  "uuid": "a2f38156-1bb2-4106-9973-6458c2f8223d",
+                  "type": "organization",
+                  "name": "EndpointSecureCo"
+                }
+              ]
+        },
+        "components": [
+            {
+                "uuid": "267d0d90-402d-4990-8834-628500149ee5",
+                "type": "software",
+                "title": "Auto-Lockout Pro",
+                "description": "Software that when installed implements auto-lockout on an endpoint.",
+                "control-implementations": [
+                    {
+                        "uuid": "0c6d487e-5597-484f-91a6-595738e549ba",
+                        "source": "./basicCatalogA.json",
+                        "description": "Implementation of controls as defined in the Basic Catalog A.",
+                        "implemented-requirements": [
+                            {
+                                "uuid": "9115dac7-dc62-4a00-9cd0-73256e9dab8b",
+                                "control-id": "A-1",
+                                "description": "Auto-Lockout Pro provides the capability to automatically lock user sessions after a defined period of inactivity."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "uuid": "700db796-4a23-4d16-a5eb-d9adc2d45574",
+                "type": "software",
+                "title": "Password Enforcer",
+                "description": "Software that when installed implements password complexity requirements on an endpoint.",
+                "control-implementations": [
+                    {
+                        "uuid": "7ce4c00a-b42c-4897-92fb-c69953de3e95",
+                        "source": "./basicCatalogA.json",
+                        "description": "Implementation of password complexity controls as defined in the Basic Catalog A.",
+                        "implemented-requirements": [
+                            {
+                                "uuid": "eecaa97b-d084-490c-ae7d-a74b82bacbbc",
+                                "control-id": "A-2",
+                                "description": "Password Enforcer mandates that all passwords must be at least an admin configurable number of characters long and include at least an admin configurable number of numerals."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

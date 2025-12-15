@@ -1,0 +1,11 @@
+{ 
+    "component-definition": {
+        "uuid": "8faee370-81da-4043-85ba-ba6eb1891c03",
+        "metadata": {
+            "title": "Ultraminimal Component",
+            "last-modified": "2025-12-14T20:24:00.283Z",
+            "version": "1.0.0",
+            "oscal-version": "1.1.3"
+        }
+    }
+}
