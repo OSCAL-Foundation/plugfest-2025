@@ -30,8 +30,8 @@ To register for an account or request instance of the application please go to: 
 
 | File | Tested? | Validates? | Additonal Execution/Processing Results | Notes/Errors |
 |------|---------|------------|------------------------------|-------------|
-| catalogs/hipaa-2.0.0/catalog.json | :heavy_check_mark: | :heavy_check_mark: | N/A | N/A |
-| catalogs/nist_ai_rm_gen_ai/1.0.0/catalog.json | :heavy_check_mark: | :x:  | N/A | The `$.catalog.metadata.last-modified` attribute value is not a valid [`date-time-with-timezone`](https://pages.nist.gov/metaschema/specification/datatypes/#date-time-with-timezone). |
+| catalogs/hipaa-2.0.0/catalog.json | :heavy_check_mark: | :x: | N/A | The `$.catalog.metadata.last-modified` attribute value is not a valid [`date-time-with-timezone`](https://pages.nist.gov/metaschema/specification/datatypes/#date-time-with-timezone). |
+| catalogs/nist_ai_rm_gen_ai/1.0.0/catalog.json | :heavy_check_mark: | :heavy_check_mark:  | N/A | N/A |
 | examples-direct-mapping/catalogs/NIST_SP-800-53_rev4/catalog.json | :heavy_check_mark: | :heavy_check_mark: | N/A | N/A |
 | examples-direct-mapping/catalogs/PCI/catalog.json | :heavy_check_mark: | :heavy_check_mark: | N/A | N/A |
 | examples-direct-mapping/profiles/Sample_NIST/profile.json | :heavy_check_mark: | :heavy_check_mark: | Referenced catalog needs to be uploaded to the web application separately and `$.profile.imports.href` needs to be fixed up. | N/A |
