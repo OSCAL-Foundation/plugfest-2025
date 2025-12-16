@@ -91,6 +91,43 @@ Tested using release 2.6.0 of the oscal-cli tool at https://github.com/metaschem
 
 <br/>
 
+# Interoperability Results for Comply0
+
+Web application to manage OSCAL documents. Validated against v0.1.0-preview.5 available at https://app.dev.comply0.com.
+Only JSON files are accepted by the tool. Currently the version can only process JSON catalogs and profiles.  
+To register for an account or request instance of the application please go to: https://www.comply0.com/
+
+### ./edgecases/ultraminimal
+| File | Tested? | Validates? | Additonal Execution/Processing Results | Notes/Errors |
+|------|---------|------------|------------------------------|-------------|
+| ultraMinimalAP.json | :x: | N/A | N/A | N/A |
+| ultraMinimalAR.json | :x: | N/A | N/A | N/A |
+| ultraMinimalCatalog.json | :heavy_check_mark:| :heavy_check_mark: | N/A | N/A |
+| ultraMinimalComponent.json | :x: | N/A | N/A | N/A |
+| ultraMinimalMapping.json | :x: | N/A: | N/A | N/A |
+| ultraMinimalPOAM.json | :x: | N/A | N/A | N/A |
+| ultraMinimalProfile.json | :heavy_check_mark:| :heavy_check_mark: | Referenced catalog needs to be uploaded to the web application separately and `$.profile.imports.href` needs to be fixed up. | N/A |
+| ultraMinimalSSP.json | :x: | N/A | N/A | N/A |
+| ultraMinimalSSP2.json | :x: | N/A | N/A | N/A |
+
+### ./basic
+| File | Tested? | Validates? | Additonal Execution/Processing Results | Notes/Errors |
+|------|---------|------------|------------------------------|-------------|
+| basicAP.json | :x: | N/A | N/A | N/A |
+| basicAR.json | :x: | N/A | N/A | N/A |
+| basicCatalogA.json | :heavy_check_mark:| :heavy_check_mark: | N/A | N/A |
+| basicCatalogB.json | :heavy_check_mark:| :heavy_check_mark: | N/A | N/A |
+| basicComponent.json | :x: | N/A | N/A | N/A |
+| basicMapping.json | :x: | N/A | N/A | N/A |
+| basicPOAM.json | :x: | N/A | N/A | N/A |
+| basicProfile.json | :heavy_check_mark:| :heavy_check_mark: | Referenced catalog needs to be uploaded to the web application separately and `$.profile.imports.href` needs to be fixed up. | N/A |
+| basicSSP.json | :x: | N/A | N/A | N/A |
+| basicSSP.json | :x: | N/A | N/A | N/A |
+
+<br/>
+
+<br/>
+
 # Interoperability Results for TOOLNAME
 
 > [!NOTE]

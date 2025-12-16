@@ -41,6 +41,6 @@ To register for an account or request instance of the application please go to: 
 ### ./scuba
 | File | Tested? | Validates? | Additional Execution/Processing Results | Notes/Errors |
 |------|---------|------------|------------------------------|-------------|
-| SCuBA_oscal_assessment-plan.json | N/A | N/A | N/A | Comply0 doesn't support assessment plans yet. |
+| SCuBA_oscal_assessment-plan.json | :x: | N/A | N/A | N/A |
 
 <br />

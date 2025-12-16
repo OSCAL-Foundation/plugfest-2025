@@ -95,7 +95,48 @@ All files tested using JSON versions.
 
 <br/>
 
-<br/>
+<br />
+
+# Interoperability Results for Comply0
+
+Web application to manage OSCAL documents. Validated against v0.1.0-preview.5 available at https://app.dev.comply0.com.
+Only JSON files are accepted by the tool. Currently the version can only process JSON catalogs and profiles.  
+To register for an account or request instance of the application please go to: https://www.comply0.com/
+
+### ./nist.gov
+| File | Tested? | Validates? | Additional Execution/Processing Results | Notes/Errors |
+|------|---------|------------|------------------------------|-------------|
+| csf/v2.0/json/NIST_CSF_v2.0_catalog.json | :heavy_check_mark:| :heavy_check_mark: | N/A | N/A |
+| SP800-53/rev4/v2.0/json/NIST_SP-800-53_rev4_catalog.json | :heavy_check_mark:| :heavy_check_mark: | N/A | N/A |
+| SP800-53/rev4/v2.0/json/NIST_SP-800-53_rev4_HIGH-baseline-resolved-profile_catalog.json | :heavy_check_mark:| :heavy_check_mark: | N/A | N/A |
+| SP800-53/rev4/v2.0/json/NIST_SP-800-53_rev4_LOW-baseline-resolved-profile_catalog.json.json | :heavy_check_mark: | :heavy_check_mark: | N/A | N/A |
+| SP800-53/rev4/v2.0/json/NIST_SP-800-53_rev4_MODERATE-baseline-resolved-profile_catalog.json.json | :heavy_check_mark: | :heavy_check_mark: | N/A | N/A |
+| SP800-53/rev4/v2.0/json/NIST_SP-800-53_rev4_HIGH-baseline_profile.json | :heavy_check_mark:| :heavy_check_mark: | Referenced catalog needs to be uploaded to the web application separately and `$.profile.imports.href` needs to be fixed up. | N/A |
+| SP800-53/rev4/v2.0/json/NIST_SP-800-53_rev4_LOW-baseline_profile.json.json | :heavy_check_mark: | :heavy_check_mark: | Referenced catalog needs to be uploaded to the web application separately and `$.profile.imports.href` needs to be fixed up. | N/A |
+| SP800-53/rev4/v2.0/json/NIST_SP-800-53_rev4_MODERATE-baseline_profile.json.json | :heavy_check_mark: | :heavy_check_mark: | Referenced catalog needs to be uploaded to the web application separately and `$.profile.imports.href` needs to be fixed up. | N/A |
+| SP800-53/rev5/v2.0/json/NIST_SP-800-53_rev5_catalog.json | :heavy_check_mark:| :heavy_check_mark: | N/A | N/A |
+| SP800-53/rev5/v2.0/json/NIST_SP-800-53_rev5_HIGH-baseline-resolved-profile_catalog.json | :heavy_check_mark:| :heavy_check_mark: | N/A | N/A |
+| SP800-53/rev5/v2.0/json/NIST_SP-800-53_rev5_LOW-baseline-resolved-profile_catalog.json | :heavy_check_mark:| :heavy_check_mark: | N/A | N/A |
+| SP800-53/rev5/v2.0/json/NIST_SP-800-53_rev5_MODERATE-baseline-resolved-profile_catalog.json | :heavy_check_mark:| :heavy_check_mark: | N/A | N/A |
+| SP800-53/rev5/v2.0/json/NIST_SP-800-53_rev5_PRIVACY-baseline-resolved-profile_catalog.json | :heavy_check_mark:| :heavy_check_mark: | N/A | N/A |
+| SP800-53/rev5/v2.0/json/NIST_SP-800-53_rev5_HIGH-baseline_profile.json | :heavy_check_mark:| :heavy_check_mark: | Referenced catalog needs to be uploaded to the web application separately and `$.profile.imports.href` needs to be fixed up. | N/A |
+| SP800-53/rev5/v2.0/json/NIST_SP-800-53_rev5_LOW-baseline_profile.json | :heavy_check_mark:| :heavy_check_mark: | Referenced catalog needs to be uploaded to the web application separately and `$.profile.imports.href` needs to be fixed up. | N/A |
+| SP800-53/rev5/v2.0/json/NIST_SP-800-53_rev5_MODERATE-baseline_profile.json | :heavy_check_mark:| :heavy_check_mark: | Referenced catalog needs to be uploaded to the web application separately and `$.profile.imports.href` needs to be fixed up. | N/A |
+| SP800-53/rev5/v2.0/json/NIST_SP-800-53_rev5_PRIVACY_profile.json | :heavy_check_mark:| :heavy_check_mark: | Referenced catalog needs to be uploaded to the web application separately and `$.profile.imports.href` needs to be fixed up. | N/A |
+| SP800-171/rev3/json/NIST_SP800-171_rev3_catalog.json | :heavy_check_mark:| :heavy_check_mark: | N/A | N/A |
+| SP800-218/ver1/json/NIST_SP800-218_ver1_catalog.json | :heavy_check_mark:| :heavy_check_mark: | N/A | N/A |
+
+
+### ./examples
+| File | Tested? | Validates? | Additional Execution/Processing Results | Notes/Errors |
+|------|---------|------------|------------------------------|-------------|
+| catalog/json/basic-catalog.json | :heavy_check_mark:| :heavy_check_mark: | N/A | N/A |
+| profile/json/basic-profile.json | :heavy_check_mark:| :heavy_check_mark: | Referenced catalog needs to be uploaded to the web application separately and `$.profile.imports.href` needs to be fixed up. | N/A |
+| profile/json/basic-profile-resolved.json | :heavy_check_mark: | :heavy_check_mark: | Treated as a catalog. | N/A  |
+
+<br />
+
+<br />
 
 # Interoperability Results for TOOLNAME
 
@@ -133,41 +174,3 @@ Any overall notes or discussion about the content's interoperability here.
 
 <br/>
 
-# Interoperability Results for Comply0
-
-Web application to manage OSCAL documents. Validated against v0.1.0-preview.5 available at https://app.dev.comply0.com.
-Only JSON files are accepted by the tool. Currently the version can only process JSON catalogs and profiles.  
-To register for an account or request instance of the application please go to: https://www.comply0.com/
-
-### ./nist.gov
-| File | Tested? | Validates? | Additional Execution/Processing Results | Notes/Errors |
-|------|---------|------------|------------------------------|-------------|
-| csf/v2.0/json/NIST_CSF_v2.0_catalog.json | :heavy_check_mark:| :heavy_check_mark: | N/A | N/A |
-| SP800-53/rev4/v2.0/json/NIST_SP-800-53_rev4_catalog.json | :heavy_check_mark:| :heavy_check_mark: | N/A | N/A |
-| SP800-53/rev4/v2.0/json/NIST_SP-800-53_rev4_HIGH-baseline-resolved-profile_catalog.json | :heavy_check_mark:| :heavy_check_mark: | N/A | N/A |
-| SP800-53/rev4/v2.0/json/NIST_SP-800-53_rev4_LOW-baseline-resolved-profile_catalog.json.json | :heavy_check_mark: | :heavy_check_mark: | N/A | N/A |
-| SP800-53/rev4/v2.0/json/NIST_SP-800-53_rev4_MODERATE-baseline-resolved-profile_catalog.json.json | :heavy_check_mark: | :heavy_check_mark: | N/A | N/A |
-| SP800-53/rev4/v2.0/json/NIST_SP-800-53_rev4_HIGH-baseline_profile.json | :heavy_check_mark:| :heavy_check_mark: | N/A | N/A |
-| SP800-53/rev4/v2.0/json/NIST_SP-800-53_rev4_LOW-baseline_profile.json.json | :heavy_check_mark: | :heavy_check_mark: | N/A | N/A |
-| SP800-53/rev4/v2.0/json/NIST_SP-800-53_rev4_MODERATE-baseline_profile.json.json | :heavy_check_mark: | :heavy_check_mark: | N/A | N/A |
-| SP800-53/rev5/v2.0/json/NIST_SP-800-53_rev5_catalog.json | :heavy_check_mark:| :heavy_check_mark: | N/A | N/A |
-| SP800-53/rev5/v2.0/json/NIST_SP-800-53_rev5_HIGH-baseline-resolved-profile_catalog.json | :heavy_check_mark:| :heavy_check_mark: | N/A | N/A |
-| SP800-53/rev5/v2.0/json/NIST_SP-800-53_rev5_LOW-baseline-resolved-profile_catalog.json | :heavy_check_mark:| :heavy_check_mark: | N/A | N/A |
-| SP800-53/rev5/v2.0/json/NIST_SP-800-53_rev5_MODERATE-baseline-resolved-profile_catalog.json | :heavy_check_mark:| :heavy_check_mark: | N/A | N/A |
-| SP800-53/rev5/v2.0/json/NIST_SP-800-53_rev5_PRIVACY-baseline-resolved-profile_catalog.json | :heavy_check_mark:| :heavy_check_mark: | N/A | N/A |
-| SP800-53/rev5/v2.0/json/NIST_SP-800-53_rev5_HIGH-baseline_profile.json | :heavy_check_mark:| :heavy_check_mark: | N/A | N/A |
-| SP800-53/rev5/v2.0/json/NIST_SP-800-53_rev5_LOW-baseline_profile.json | :heavy_check_mark:| :heavy_check_mark: | N/A | N/A |
-| SP800-53/rev5/v2.0/json/NIST_SP-800-53_rev5_MODERATE-baseline_profile.json | :heavy_check_mark:| :heavy_check_mark: | N/A | N/A |
-| SP800-53/rev5/v2.0/json/NIST_SP-800-53_rev5_PRIVACY_profile.json | :heavy_check_mark:| :heavy_check_mark: | N/A | N/A |
-| SP800-171/rev3/json/NIST_SP800-171_rev3_catalog.json | :heavy_check_mark:| :heavy_check_mark: | N/A | N/A |
-| SP800-218/ver1/json/NIST_SP800-218_ver1_catalog.json | :heavy_check_mark:| :heavy_check_mark: | N/A | N/A |
-
-
-### ./examples
-| File | Tested? | Validates? | Additional Execution/Processing Results | Notes/Errors |
-|------|---------|------------|------------------------------|-------------|
-| catalog/json/basic-catalog.json | :heavy_check_mark:| :heavy_check_mark: | N/A | N/A |
-| profile/json/basic-profile.json | :heavy_check_mark:| :heavy_check_mark: | Referenced catalog needs to be uploaded to the web application separately and the `$.profile.imports.href` needs to be fixed up.  | N/A |
-| profile/json/basic-profile-resolved.json | :heavy_check_mark: | :heavy_check_mark: | Treated as a catalog. | N/A  |
-
-<br />
